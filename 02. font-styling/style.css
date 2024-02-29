@@ -1,0 +1,16 @@
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-variant: small-caps;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: normal;
+}
+p {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 50px;
+}
+
+/* sort hand */
+h2 {
+  font: normal italic small-caps 50px/20px Georgia, sans-serif;
+}
