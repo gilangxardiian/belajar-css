@@ -1,0 +1,7 @@
+ul#anime li {
+  color: aqua;
+}
+
+ul#anime li.favorit {
+  color: red;
+}
