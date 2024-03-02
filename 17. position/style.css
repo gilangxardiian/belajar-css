@@ -1,0 +1,170 @@
+body {
+  height: 2000px;
+}
+.container {
+  width: 778px;
+  height: 525px;
+  margin: auto;
+  border: 1px solid black;
+  box-sizing: border-box;
+  /* position: relative; */
+}
+
+.container h3 {
+  width: 150px;
+  height: 40px;
+  font: 12px/15px arial;
+  text-align: center;
+  padding: 6px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.satu,
+.dua,
+.tiga {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+
+/* contoh position static */
+.static {
+  width: 150px;
+  border: 1px solid black;
+  padding: 20px;
+  float: left;
+}
+
+.static .satu {
+  background-color: red;
+}
+
+.static .dua {
+  background-color: yellow;
+}
+
+.static .tiga {
+  background-color: green;
+}
+
+/* contoh position relative */
+.relative {
+  width: 150px;
+  border: 1px solid black;
+  padding: 20px;
+  float: left;
+}
+
+.relative .satu {
+  background-color: lightskyblue;
+}
+
+.relative .dua {
+  background-color: lightseagreen;
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+
+.relative .tiga {
+  background-color: lightcoral;
+}
+
+/* contoh position absolute */
+.absolute {
+  width: 150px;
+  border: 1px solid black;
+  padding: 20px;
+  float: left;
+  position: relative;
+}
+
+.absolute .satu {
+  background-color: cyan;
+}
+
+.absolute .dua {
+  background-color: magenta;
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+  right: 0;
+}
+
+.absolute .tiga {
+  background-color: yellow;
+}
+
+/* contoh position fixed */
+.fixed {
+  width: 200px;
+  height: inherit;
+  border: 1px solid black;
+  padding: 20px;
+  float: left;
+  box-sizing: border-box;
+}
+
+.container .fixed h3 {
+  width: 150px;
+  height: 60px;
+  font: 12px/15px arial;
+  text-align: center;
+  padding: 6px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.fixed .satu {
+  background-color: gold;
+}
+
+.fixed .dua {
+  width: 100%;
+  height: 10px;
+  background-color: purple;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.fixed .tiga {
+  background-color: blue;
+}
+
+.container .kotak {
+  background-color: black;
+  position: fixed;
+  top: 100px;
+  bottom: 100px;
+  left: 100px;
+  right: 100px;
+  opacity: 0.7;
+}
+
+.close {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border: 3px solid black;
+  background-color: white;
+  border-radius: 50%;
+  right: -15px;
+  top: -15px;
+}
+
+/* clearfix */
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
