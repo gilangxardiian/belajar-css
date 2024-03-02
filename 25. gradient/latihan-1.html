@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient</title>
+    <!-- gradient properti CSS3 -->
+    <style>
+      body {
+        height: 9000px;
+      }
+      div {
+        width: 400px;
+        height: 400px;
+        margin: 50px auto;
+      }
+
+      .satu {
+        /* menggunakan sudut */
+        border-radius: 30px;
+        box-shadow: 8px 8px 10px 3px grey;
+        background: linear-gradient(50deg, cyan, purple, lightskyblue);
+      }
+
+      .satu:hover {
+        margin-top: -3px;
+        transition: 0.5s;
+        border-radius: 50%;
+      }
+
+      .dua {
+        /* menggunakan arah */
+        background: linear-gradient(to bottom right, brown, red, yellow);
+        border-radius: 50%;
+        box-shadow: 8px 8px 10px grey;
+      }
+
+      .dua:hover {
+        margin-top: -10px;
+        border-radius: 0;
+        transition: 0.5s;
+        box-shadow: 10px 10px 15px paleturquoise;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="satu"></div>
+    <div class="dua"></div>
+  </body>
+</html>
