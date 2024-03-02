@@ -1,0 +1,93 @@
+body {
+  font: 16px/28px Arial, sans-serif;
+}
+
+/* property transform:
+
+    scale(angka), scaleX(angka), scaleY(angka)
+    rotate(deg), rotateX(deg), rotateY(deg)
+    skew(deg), skewX(deg), skewY(deg)
+    translate(px), translateX(px), translateY(px)
+*/
+
+.container {
+  width: 1200px;
+  height: 400px;
+  display: flex;
+  margin: 30px auto 0;
+}
+
+.container .scale,
+.rotate,
+.skew,
+.translate {
+  width: 300px;
+  height: 395px;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+.container .judul1 {
+  margin-bottom: 50px;
+  border: 1px solid black;
+}
+
+.container a {
+  color: #333;
+  font-size: 30px;
+}
+
+.container a:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* style transform tidak kombinasi */
+
+.container .navigasi1,
+.navigasi2 {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid black; */
+  transition: 0.5s;
+  transition-property: transform;
+}
+
+.scale .navigasi1 a:hover {
+  transform: scale(1.5);
+}
+
+.rotate .navigasi1 a:hover {
+  transform: rotate(150deg);
+}
+
+.skew .navigasi1 a:hover {
+  transform: skew(20deg);
+}
+
+.translate .navigasi1 a:hover {
+  transform: translateY(-10px);
+}
+
+.scale .navigasi2 a:hover {
+  /* kombinasi scale dengan rotate */
+  transform: scale(1.5) rotate(130deg);
+}
+
+.rotate .navigasi2 a:hover {
+  /* kombinasi route dengan scale */
+  transform: rotate(130deg) scale(1.5);
+}
+
+.skew .navigasi2 a:hover {
+  /* kombinasi skew dengan translate */
+  transform: skewY(10deg) translateY(-10px);
+}
+
+.translate .navigasi2 a:hover {
+  /* kombinasi translate dengan skew */
+  transform: translateX(-10px) translateY(10px);
+}
