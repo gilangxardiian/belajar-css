@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator Java</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="logo cf">
+        <h1>Belajar Otodidak</h1>
+      </div>
+      <div class="navigasi cf">
+        <ul>
+          <li><a href="index.html" target="_self">HOME</a></li>
+          <li><a href="#">WHILE DO</a></li>
+          <li><a href="#">FOR</a></li>
+          <li><a href="#">ARRAY</a></li>
+          <li><a href="#">VARIABLE</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container1">
+      <div class="gambar1"></div>
+      <div class="gambar2"></div>
+      <div class="penulis">
+        <h3>Penulis nya :</h3>
+        <a href="#">Muhamad Gilang Ardian</a>
+      </div>
+    </div>
+    <div class="container2 cf">
+      <div class="main">
+        <h1>Operator Pada Bahasa Pemrograman Java</h1>
+        <p>
+          Operator Java merupakan karakter khusus yang berupa simbol atau tanda yang memerintahkan compiler untuk melakukan berbagai operasi terhadap sejumlah operand. Perintah operasi dispesifikasikan oleh operator, dimana operand nya
+          adalah variabel, pernyataan, atau besaran literal. Operator yang dibahas pada bagian ini adalah operator aritmatika, increment dan decrement, assignment (penugasan), relasi, logical
+        </p>
+        <h1>OPERATOR ARITMATIKA</h1>
+        <p>Sama halnya dengan semua bahasa pemrograman, Java menyediakan operator operator aritmatika untuk manipulasi variabel data numerik. Operator-operator tersebut antara lain</p>
+        <div class="operator1">
+          <img src="img/OperatorAritmatika.png" alt="operator1" />
+        </div>
+        <h3>Contoh Program Operator Aritmatika</h3>
+        <div class="contoh1">
+          <p>
+            class Aritmatika{<br />
+            public static void main(String[] args) {<br />
+            int a = 20;<br />
+            int b = 10;<br />
+            System.out.println("Penggunaan Operator Aritmatika "); <br />
+            System.out.println("Nilai awal a adalah : "+a);<br />
+            System.out.println("Nilai awal b adalah : "+b);<br />
+            System.out.println("Hasil dari a + b = " +(a + b));<br />
+            System.out.println("Hasil dari a - b = " +(a - b));<br />
+            System.out.println("Hasil dari a / b = " +(a / b));<br />
+            System.out.println("Hasil dari a * b = " +(a * b));<br />
+            System.out.println("Hasil dari a % b = " +(a % b));<br />
+            } }
+          </p>
+        </div>
+        <h1>OPERATOR INCREAMENT DECREAMENT</h1>
+        <p>
+          Operator Increment dan Decrement digunakan untuk menaikan atau menurunkan suatu nilai integer (bilangan bulat) sebanyak satu satuan, dan hanya dapat digunakan pada variabel. Ada dua versi operator increment maupun Decrement, yaitu
+          prefix dan postfix. Prefix berarti operator digunakan sebelum variabel atau ekspresi, dan postfix berarti operator digunakan sesudahnya. <br />Penjelasan selengkapnya yaitu:
+        </p>
+        <div class="operator2">
+          <img src="img/OperatorIncrement.JPG" alt="Operator Increment Decrement" />
+        </div>
+
+        <h3>Contoh Program Increament dan Decreament</h3>
+        <div class="contoh2">
+          <p>
+            class IncrementDecrement{ <br />
+            public static void main (String[] args){<br />
+            int i = 1;<br />
+            System.out.println("i : " + i);<br />
+            System.out.println("++i : " + ++i);<br />
+            System.out.println("i++ : " + i++);<br />
+            System.out.println("i : " + i);<br />
+            System.out.println("--i : " + --i);<br />
+            System.out.println("i-- : " + i--);<br />
+            System.out.println("i : " + i);<br />
+            }<br />
+            }
+          </p>
+        </div>
+        <h1>Operator Assignment ( Penugasan )</h1>
+        <p>
+          Operator assignment dalam Java digunakan untuk memberikan sebuah nilai ke sebuah variabel. Operator assignment hanya berupa '=', namun selain itu dalam Java dikenal beberapa shortcut assignment operator yang penting, yang
+          digambarkan dalam tabel berikut :
+        </p>
+        <div class="operator3">
+          <img src="img/OperatorAssigment.png" alt="Operator Penugasan" />
+        </div>
+        <h3>Contoh Program Operator Asigment</h3>
+        <div class="contoh3">
+          <p>
+            class OperatorAssigmentP4{<br />
+            public static void main(String [] args){<br />
+            int var = 10;<br />
+            int a,b,c;<br />
+            a = b = c = 100;<br />
+            int d,e,f;<br />
+            f = 200;<br />
+            e = f;<br />
+            d = e;<br />
+            System.out.println("Nilai var : "+var);<br />
+            System.out.println("Nilai a : "+a);<br />
+            System.out.println("Nilai b : "+b);<br />
+            System.out.println("Nilai c : "+c);<br />
+            System.out.println("Nilai f : "+f);<br />
+            System.out.println("Nilai e : "+e);<br />
+            System.out.println("Nilai d : "+d);<br />
+            int z;<br />
+            char teks1 ='a'; // dalam unicode karakter 'a' dipresentasikan angka 97<br />
+            z = teks1*100; // z = 97*100<br />
+            System.out.println("Nilai Teks 1 : "+teks1);<br />
+            System.out.println("Nilai z : "+z);<br />
+            }<br />
+            }
+          </p>
+        </div>
+        <h1>Operator Relasi</h1>
+        <p>Operator relasi dalam Java digunakan untuk menghasilkan nilai boolean yang sering digunakan untuk mengatur alur jalannya sebuah program.</p>
+        <div class="operator4">
+          <img src="img/OperatorRelasi.PNG" alt="Operator relasi" />
+        </div>
+        <h3>Cotoh Program dari Operator Relasi</h3>
+        <div class="contoh4">
+          <p>
+            class OperatorRelasiP4{<br />
+            public static void main(String [] args){<br />
+            int x,y,z;<br />
+            x = 100;<br />
+            y = 99;<br />
+            z = 99;<br />
+
+            System.out.println("Nilai x = "+x);<br />
+            System.out.println("Nilai y = "+y);<br />
+            System.out.println("Nilai z = "+z);<br />
+
+            //operator sama dengan<br />
+            if(y==z){<br />
+            System.out.println("y sama dengan z");<br />
+            }else{<br />
+            System.out.println("y tidak sama dengan z");<br />
+            }<br />
+
+            //operator tidak sama dengan<br />
+            if(x != y){<br />
+            System.out.println("x tidak sama dengan y");<br />
+            }else{<br />
+            System.out.println("x sama dengan y");<br />
+            }<br />
+
+            //operator lebih besar dari<br />
+            if(x > y){<br />
+            System.out.println("x lebih besar dari y");<br />
+            }else{<br />
+            System.out.println("x lebih kecil dari y");<br />
+            }<br />
+
+            //opetator lebih kecil dari<br />
+            if (y > x){<br />
+            System.out.println("y lebih kecil dari x");<br />
+            }else{<br />
+            System.out.println("y lebih besar dari x");<br />
+            }<br />
+
+            //operator lebih besar dari atau sama dengan<br />
+            if (x >= y){<br />
+            System.out.println("x lebih besar dari atau sama dengan y");<br />
+            }else{<br />
+            System.out.println("x lebih kecil dari atau sama dengan y");<br />
+            }<br />
+
+            //operator lebih kecil dari atau sama dengan<br />
+            if(y >= x){<br />
+            System.out.println("y lebih kecil dari atau sama dengan x");<br />
+            }else{<br />
+            System.out.println("y lebih besar dari atau sama dengan x");<br />
+            }<br />
+            }<br />
+            }
+          </p>
+        </div>
+        <h1>Opeator Logika</h1>
+        <p>Operator ini digunakan untuk ekspresi logik yang menghasilkan nilai boolean. Operator - operator yang digunakan adalah AND ( && ),OR ( ¦ ¦ ) dan NOT ( ! ).</p>
+        <div class="operator5">
+          <img src="img/OperatorLogika.png" alt="Operator Logika" />
+        </div>
+        <h3>Contoh Program Operator Logika</h3>
+        <div class="contoh5">
+          <p>
+            class OperatorLogikaP4{<br />
+            public static void main(String [] Args){<br />
+            boolean benar = true;<br />
+            boolean salah = false;<br />
+
+            System.out.println("Hubungan OR (||)");<br />
+            System.out.println("Benar || Salah : "+(benar||salah));<br />
+            System.out.println("Salah || Benar : "+(salah||benar));<br />
+            System.out.println("Salah || Salah : "+(salah||salah));<br />
+            System.out.println("Hubungan AND (&&)");<br />
+            System.out.println("Benar && Benar : "+(benar && benar));<br />
+            System.out.println("Salah && Benar : "+(salah && benar));<br />
+            System.out.println("Salah && Salah : "+(salah && salah));<br />
+            System.out.println("Benar && Salah : "+(benar && salah));<br />
+            System.out.println("Hubungan NOT (!)");<br />
+            System.out.println("Kebalikan (NOT) dari Benar adalah : "+!benar);<br />
+            System.out.println("Kebalikan (NOT) dari Salah adalah : "+!salah);<br />
+            }<br />
+            }
+          </p>
+        </div>
+      </div>
+      <div class="sidebar">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt aperiam inventore dolore ab earum iste cum voluptatum sint possimus aut doloremque sit veniam, iusto dolorum, vel quos consequuntur voluptates reprehenderit, beatae
+        ea neque eius iure asperiores. Dolores tempore amet quia voluptates, ullam reprehenderit dolore esse quos. Magnam quisquam perferendis vero totam enim debitis dicta esse molestiae culpa doloremque facilis iste ea voluptatum, odio
+        ipsa, quo aperiam optio doloribus! Doloremque repellat labore recusandae asperiores quia exercitationem voluptas ad repudiandae fugiat placeat ea ducimus reiciendis corporis quos temporibus sunt, similique repellendus optio magnam,
+        harum ipsa mollitia! Sequi odit tenetur doloribus inventore debitis!
+      </div>
+    </div>
+  </body>
+</html>
