@@ -1,0 +1,158 @@
+body {
+  height: 99999px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* Property Pada Parent */
+
+.container_global {
+  width: 1500px;
+  height: 3000px;
+  border: 5px solid #333;
+  padding: 20px;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.pembungkus {
+  width: 605px;
+  height: 600px;
+  margin: 3px;
+  border: 3px solid blue;
+}
+
+.container1,
+.container2,
+.container3,
+.container4,
+.container6 {
+  width: 600px;
+  /* height: 600px; */
+  padding: 5px;
+  box-sizing: border-box;
+  margin: auto;
+  border: 3px solid red;
+}
+
+.container1 div,
+.container2 div,
+.container3 div,
+.container6 div {
+  width: 120px;
+  height: 120px;
+  margin: 3px;
+  background-color: aqua;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: row-reverse;
+  /* row | row-reverse | column | column-reverse */
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  /* nowrap | wrap | wrap-reverse */
+}
+
+.container3 {
+  /* height: 300px; */
+  display: flex;
+  justify-content: center;
+  /* flex-start | flex-end | center | space-around | space-between | space-evenly; */
+}
+
+.container4 div {
+  width: 300px;
+  height: 400px;
+  margin: 3px;
+  background-color: cyan;
+}
+
+.container4 {
+  display: flex;
+  align-items: stretch;
+  /* flex-start | flex-end | center | stretch | baseline; */
+}
+
+.container5 {
+  width: 600px;
+  height: 500px;
+  padding: 5px;
+  box-sizing: border-box;
+  margin: auto;
+  border: 5px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  /* flex-start | flex-end | center | space-around | space-between; */
+}
+
+.container5 div {
+  width: 100px;
+  height: 90px;
+  margin: 3px;
+  background-color: cyan;
+}
+
+/* Akhir Property Pada Parent */
+
+/* Property Pada Child */
+.container6 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container6 div.satu_copy {
+  order: 4;
+}
+
+.container6 div.dua_copy {
+  order: 3;
+}
+
+.container6 div.tiga_copy {
+  order: 2;
+}
+
+.container6 div.empat_copy {
+  order: 1;
+}
+
+.container7,
+.container8 {
+  width: 600px;
+  height: 200px;
+  padding: 5px;
+  box-sizing: border-box;
+  margin: auto;
+  border: 3px solid red;
+  display: flex;
+}
+
+.container7 div,
+.container8 div {
+  margin: 3px;
+  flex-grow: 1;
+  background-color: aqua;
+}
+
+.container7 div.dua {
+  flex-grow: 3;
+}
+
+.container8 div.dua {
+  align-self: flex-end;
+  /* flex-start | flex-end | stretch | center | baseline | auto */
+}
+/* Akhir Property Child */
