@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipe Data</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="global cf">
+      <div class="top-bar">
+        <div class="nama">
+          <h3>Belajar Otodidak</h3>
+        </div>
+        <div class="navigasi">
+          <ul>
+            <li><a href="index.html" target="_self">HOME</a></li>
+            <li><a href="#intro">INTRO</a></li>
+            <li><a href="#integer">INTEGER</a></li>
+            <li><a href="#float">FLOAT</a></li>
+            <li><a href="#char">CHAR</a></li>
+            <li><a href="#boolean">BOOLEAN</a></li>
+            <li><a href="#contoh">CONTOH</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="main1">
+        <div class="header">
+          <h1>Tipe Data Java</h1>
+          <p>ditulis oleh <a href="#">Muhamad Gilang Ardian </a>pada 19 desember 2021</p>
+        </div>
+        <div class="content">
+          <h3 id="intro">Introduction</h3>
+          <p>
+            Bahasa pemrograman pada umumnya, mengenal adanya variabel yang digunakan untuk menyimpan nilai atau data. Sedangkan Java sendiri dikenal sebagai bahasa pemrograman dengan sifat strongly typed yang artinya diharuskan
+            mendeklarasikan tipe data dari semua variabel, dan apabila lupa atau salah mengikuti aturan pendeklarasian variabel, maka akan mendapatkan error pada saat proses kompilasi.
+          </p>
+          <br />
+          <p>Java memiliki tipe data yang dapat dikategorikan menjadi dua kelompok, yaitu tipe data primitif dan referensi.</p>
+          <div class="list">
+            <ul>
+              <li><p>Tipe data primitif ( bilangan bulat (integer,byte,short,long), float,double ( pecahan),char , boolean.</p></li>
+              <li><p>Tipe data referensi adalah dapat mendefinisikan tipe data baru yang merupakan objek dari class tertentu. Tipe data ini digunakan untuk mereferensikan objek atau class tertentu, seperti String.</p></li>
+            </ul>
+          </div>
+          <h3 id="integer">Tipe Data Bilangan Integer ( Bulat )</h3>
+          <p>Integer merupakan tipe data numerik yang digunakan apabila tidak berurusan dengan pecahan atau bilangan desimal. Tipe data numerik yang termasuk integer adalah sebagai berikut :</p>
+          <div class="TipeData1"></div>
+          <p>
+            Bilangan integer biasanya menggunakan int, dan bukan byte, short maupun long. Bilangan integer juga mengenal nilai positif dan negatif ( signed number ). Tipe data byte dan short hanya digunakan pada aplikasi khusus yang
+            memperhatikan penggunaan memori. Sedangkan long jarang digunakan karena jarang memerlukan bilangan sebesar kapasitas long.
+          </p>
+          <h3 id="float">Tipe Data Bilangan Floating ( Pecahan )</h3>
+          <div class="TipeData2"></div>
+          <p>
+            Semua bilangan pecahan atau desimal dalam Java tanpa diakhiri huruf f akan dianggap sebagai double. Sedangkan bilangan yang ingin dikategorikan sebagai float harus diakhiri dengan huruf F. Misalnya : 4.22 F atau 2.314f.
+            Sedangkan untuk bilangan double, bisa menambah dengan huruf D, karena secara default bilangan dengan koma atau pecahan atau desimal akan dianggap sebagai double.
+          </p>
+          <h3 id="char">Tipe Data Char</h3>
+          <p>
+            Char adalah karakter tunggal yang didefinisikan dengan diawali dan diakhiri dengan tanda ' ( petik tunggal ). Char berbeda dengan String, karena String bukan merupakan tipe data primitif, tetapi sudah merupakan sebuah objek.
+            Tipe char mengikuti aturan unicode, sehingga dapat menggunakan kode /u kemudian diikuti bilangan dari 0 sampai 65535, tetapi yang biasa digunakan adalah bilangan heksadesimal dari 0000 sampai FFFF. Misalnya : '\u123' Selain
+            karakter biasa, juga terdapat karakter khusus yang didefinisikan dengan cara mengawalinya menggunakan tanda \ seperti pada tabel berikut :
+          </p>
+          <div class="TipeData3">
+            <div class="gambar1"></div>
+            <div class="gambar2"></div>
+          </div>
+          <h3 id="boolean">Tipe Data Boolean</h3>
+          <p>Dalam Java dikenal tipe data boolean yang terdiri dari dua nilai saja, yaitu true dan false. Boolean sangat penting dalam mengevaluasi suatu kondisi, dan sering digunakan untuk menentukan alur program.</p>
+          <h3 id="contoh">Contoh Program</h3>
+          <div class="program1">
+            <p>
+              class TipeData {<br />
+              public static void main(String[] args) {<br />
+              // Tipe data primitif
+              <br />
+              long data1 = 546767226531;<br />
+              int data2 = 2235641;<br />
+              short data3 = 714;<br />
+              byte data4 = 34;<br />
+              float data6 = (float) 1.733; // tipe data pecahan<br />
+              double data5 = 4.967; // tipe data pecahan<br />
+              char data7 = 'C';<br />
+              boolean data8 = true;<br />
+              System.out.println(“Nilai Long : “+ data1);<br />
+              System.out.println(“Nilai Int : “+ data2);<br />
+              System.out.println(“Nilai Short : “+ data3);<br />
+              System.out.println(“Nilai Byte : “+ data4);<br />
+              System.out.println(“Nilai Double : “+ data5);<br />
+              System.out.println(“Nilai Float : “+ data6);<br />
+              System.out.println(“Nilai Char : “+ data7);<br />
+              System.out.println(“Nilai Boolean : “+ data8);<br />
+              }<br />
+              }
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="main2">
+        <div class="header">
+          <h1>MAN BEHIND THE BLOG</h1>
+        </div>
+        <div class="content">
+          <div class="penulis">
+            <div class="man"></div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, in? Quo, in voluptatum vero reprehenderit exercitationem earum vel iure, nesciunt labore sequi eligendi harum obcaecati nobis cumque, aliquid quaerat dolores!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,324 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: square;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* style css */
+
+body {
+  font: 16px/28px arial, sans-serif;
+  color: #333;
+  background-image: url(img/background1.png);
+}
+
+.global {
+  width: 900px;
+  margin: auto;
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+}
+
+.global a {
+  color: lightseagreen;
+  text-decoration: none;
+}
+
+.global a:hover {
+  padding: 2px;
+  color: white;
+  background-color: lightskyblue;
+}
+
+.top-bar {
+  width: 900px;
+  margin: 30px auto;
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+  background-color: #333;
+}
+
+.top-bar .nama {
+  height: 58px;
+  /* border: 1px solid black; */
+  float: left;
+}
+
+.nama h3 {
+  font-size: 30px;
+  color: white;
+  padding: 14px;
+  /* border: 1px solid red; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top-bar .navigasi ul li {
+  display: inline-block;
+  padding: 15px;
+  /* border: 1px solid black; */
+}
+
+.main1 {
+  background-color: lightgray;
+  width: 600px;
+  float: left;
+  padding: 20px;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+.main1 .header h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(80, 78, 78);
+}
+
+.main1 .header p {
+  font-size: 11px;
+}
+
+.content {
+  margin-top: 10px;
+  box-sizing: border-box;
+  float: left;
+  /* border: 1px solid black; */
+}
+
+.content h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* border: 1px solid black; */
+}
+
+.content p {
+  text-align: justify;
+  line-height: 25px;
+}
+
+.list {
+  padding: 20px;
+  /* border: 1px solid black; */
+}
+
+.TipeData1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 125px;
+  background-position: center;
+  background-image: url(img/TipeData1.png);
+  background-repeat: no-repeat;
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+}
+
+.TipeData2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 170px;
+  background-position: center;
+  background-image: url(img/TipeData2.jpg);
+  background-repeat: no-repeat;
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+}
+
+.TipeData3 .gambar1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 170px;
+  background-position: center;
+  background-image: url(img/TipeData3.jpg);
+  background-repeat: no-repeat;
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+}
+
+.TipeData3 .gambar2 {
+  margin-top: -45px;
+  margin-bottom: 10px;
+  height: 170px;
+  background-position: center;
+  background-image: url(img/TipeData3_Lanjut.jpg);
+  background-repeat: no-repeat;
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+}
+
+.program1 {
+  width: 500px;
+  height: 200px;
+  margin: auto;
+  background-color: #fff;
+  overflow: scroll;
+  /* border: 1px solid black; */
+}
+
+.program1 p {
+  padding: 10px;
+  font: 14px/25px arial, sans-serif;
+}
+
+.main2 {
+  width: 250px;
+  height: 250px;
+  float: right;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+.main2 .header h1 {
+  width: 250px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  color: lightseagreen;
+  background-color: #333;
+}
+
+.penulis .man {
+  width: 100px;
+  height: 110px;
+  background-image: url(img/man.jpg);
+  background-size: cover;
+  background-position: 0 -20px;
+  background-repeat: no-repeat;
+  float: left;
+  margin-right: 10px;
+  /* border: 1px solid black; */
+}
+
+/* clearfix */
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
