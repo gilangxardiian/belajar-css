@@ -1,0 +1,43 @@
+.container {
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  position: relative;
+}
+
+.container h3 {
+  width: 300px;
+  border: 1px solid black;
+  font: 16px/28px arial;
+  text-align: center;
+}
+
+.satu,
+.dua,
+.tiga {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+
+.satu {
+  background-color: red;
+  z-index: 999;
+}
+
+.dua {
+  background-color: yellow;
+  top: 200px;
+  left: 100px;
+  z-index: -999;
+}
+
+.tiga {
+  background-color: green;
+  top: 250px;
+  left: 200px;
+  z-index: -1000;
+}
