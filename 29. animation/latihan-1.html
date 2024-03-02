@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <!-- animation properti CSS3 -->
+    <style>
+      /* property animasi 
+        [name] [duration] [timming-function]
+        [delay] [interaction-count] [direction] [fill-mode] [play-state] */
+
+      .container {
+        width: 800px;
+        height: 900px;
+        box-sizing: border-box;
+        border: 1px solid black;
+      }
+
+      .kotak {
+        width: 200px;
+        height: 200px;
+        background-color: lightskyblue;
+        animation-name: animasiKotak1;
+        animation-duration: 5s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes animasiKotak1 {
+        0% {
+          margin-left: 0;
+          transform: rotate(180deg) rotateY(180deg) rotateX(180deg);
+        }
+
+        20% {
+          margin-left: 600px;
+          margin-top: 0px;
+        }
+
+        40% {
+          margin-top: 700px;
+          margin-left: 600px;
+        }
+
+        60% {
+          margin-top: 700px;
+          margin-left: 400px;
+        }
+
+        80% {
+          margin-top: 400px;
+          margin-left: 400px;
+          background: linear-gradient(45deg, red, green);
+        }
+
+        100% {
+          margin-top: 400px;
+          margin-left: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="kotak"></div>
+    </div>
+  </body>
+</html>
