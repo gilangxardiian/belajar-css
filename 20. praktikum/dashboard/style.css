@@ -1,0 +1,21 @@
+body {
+  background-image: url(img/bg1.png);
+  color: white;
+}
+a {
+  color: inherit;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+li:first-child {
+  color: red;
+}
+
+ul li a:hover {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
