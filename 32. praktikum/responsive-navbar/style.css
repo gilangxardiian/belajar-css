@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ff008e;
+  color: #ffcbe1;
+  height: 60px;
+  align-items: center;
+}
+
+nav .logo {
+  color: #f6f5f5;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  width: 45%;
+  list-style: none;
+  font-size: 0.8em;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  padding: 2px 10px;
+  box-sizing: border-box;
+  font-weight: 700;
+  color: #f6f5f5;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff008e;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+  height: 20px;
+  position: relative;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 45px;
+  height: 30px;
+  top: -4.5px;
+  left: -8px;
+  opacity: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  border-radius: 20px;
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: #f6f5f5;
+  transition: all 0.5s;
+}
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+/* Responsive Breakpoint */
+
+/* Ukuran Tablet */
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 60%;
+  }
+}
+
+/* Ukuran Mobile */
+@media screen and (max-width: 576px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav ul {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 0;
+    width: 80%;
+    height: 112vh;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    transform: translateX(100%);
+    background-color: #ff008e;
+    transition: all 1s;
+    opacity: 0;
+  }
+
+  nav ul.slide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
